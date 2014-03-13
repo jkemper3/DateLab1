@@ -53,7 +53,7 @@ public class Invoice {
     }
     
     public String getDueDateAsString(){
-    String format = "MM/dd/yyyy hh:mm a";
+    String format = "M/dd/yyyy";
     SimpleDateFormat sdf = new SimpleDateFormat(format);
     
      String formattedDate = sdf.format(dueDate);

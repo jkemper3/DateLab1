@@ -6,17 +6,22 @@
 
 package datelab1;
 
+import java.util.Calendar;
+
 /**
  *
  * @author jkemper3
  */
 public class StartUp {
     public static void main(String[] args) {
-        Invoice i = new Invoice();
+        
+        Calendar c = Calendar.getInstance();
+        Invoice i = new Invoice(c);
         
         i.getDueDateAsString();
         i.getDueDate();
         
-        
-    }
+        System.out.println(i.getDueDateAsString());
+        System.out.println(i.getDueDate());
+}
 }
